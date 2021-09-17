@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="8.0dip" android:text="@string/appview_similar_apps" style="@style/Aptoide.TextView.Regular.M.BlackAlpha" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/similar_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/title" />
+</RelativeLayout>

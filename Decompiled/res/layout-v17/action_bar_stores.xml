@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="center" android:id="@id/toolbar" android:background="?toolbarBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="112.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_gravity="center" android:layout_width="242.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/action_bar_logo" />
+            <ImageView android:id="@id/user_actionbar_icon" android:background="?actionBarItemBackground" android:padding="10.0dip" android:visibility="invisible" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic_account_circle" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:foregroundGravity="right" android:layout_marginEnd="4.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

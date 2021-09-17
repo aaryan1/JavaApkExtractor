@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clickable="true" android:layout_width="104.0dip" android:layout_height="165.0dip" app:cardCornerRadius="4.0dip" style="?backgroundCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/icon_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/native_main_image" android:background="@color/transparent" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerHorizontal="true" android:contentDescription="native_main_image" />
+            <RelativeLayout android:id="@id/primary_ad_view_layout" android:background="@color/transparent" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/icon" android:layout_width="88.0dip" android:layout_height="88.0dip" android:adjustViewBounds="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="107.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/icon_wrapper">
+            <TextView android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" style="@style/Aptoide.TextView.Regular.XS.BlackAlpha" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/app_info_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="1.0dip">
+                <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="?ratingDrawable" />
+                <TextView android:id="@id/rating_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/Aptoide.TextView.Regular.XXS.Black" />
+                <TextView android:gravity="end" android:id="@id/ad_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/all_title_ad" style="@style/Aptoide.TextView.Regular.XXS.Black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appc_earn_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="1.0dip">
+                <ImageView android:id="@id/coins_image" android:layout_width="17.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" app:srcCompat="@drawable/ic_get_appc" />
+                <TextView android:textColor="@color/curation_gold" android:id="@id/reward_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Aptoide.TextView.Medium.XXS" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appc_info_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="1.0dip">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_spend_appc" />
+                <TextView android:id="@id/appc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appc_card_short" style="@style/Aptoide.TextView.Medium.XXS.SpendAppc" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

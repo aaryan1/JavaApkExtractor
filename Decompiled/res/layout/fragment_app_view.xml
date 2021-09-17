@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinator_layout_appview" android:background="?appview_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/action_bar_appview" />
+    <ImageView android:id="@id/app_icon" android:layout_width="104.0dip" android:layout_height="104.0dip" app:layout_anchor="@id/app_bar_layout" app:layout_anchorGravity="bottom|center" />
+    <cm.aptoide.aptoideviews.appcoins.BonusAppcView android:id="@id/bonus_appc_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationY="-16.0dip" app:layout_anchor="@id/app_bar_layout" app:layout_anchorGravity="bottom|center|left" app:side="LEFT" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view_app" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/appview_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" style="?android:progressBarStyleLarge" />
+            <cm.aptoide.aptoideviews.errors.ErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/appview_full" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <View android:layout_width="104.0dip" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/trusted_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/trusted_badge" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_badges_trusted" />
+                        <TextView android:id="@id/trusted_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appview_header_trusted_text" android:textAllCaps="true" style="@style/Aptoide.TextView.Medium.XXS" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxLines="1" style="@style/Aptoide.TextView.Regular.L" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_download_icon" />
+                    <TextView android:layout_gravity="center" android:id="@id/header_downloads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/Aptoide.TextView.Medium.XXS.Grey" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_dimension" android:tint="@color/grey" />
+                    <TextView android:layout_gravity="center" android:id="@id/header_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/Aptoide.TextView.Medium.XXS.Grey" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_star_black" android:tint="@color/grey" />
+                    <TextView android:layout_gravity="center" android:id="@id/header_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/Aptoide.TextView.Medium.XXS.Grey" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/install_group" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ViewStub android:id="@id/appview_install_element" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="11.0dip" />
+                    <include android:id="@id/apkfy_element" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="14.0dip" layout="@layout/appview_apkfy_layout_element" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                            <include android:layout_gravity="center_horizontal" android:id="@id/poa_appc_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/appview_poa_layout" />
+                        </FrameLayout>
+                        <include android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" layout="@layout/iap_appc_label" />
+                    </FrameLayout>
+                    <include android:layout_gravity="center_horizontal" android:id="@id/migration_warning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" layout="@layout/appview_migration_warning" />
+                    <include android:id="@id/wallet_install_promotion" android:visibility="gone" layout="@layout/appview_wallet_promotion_install_layout" />
+                    <View android:id="@id/similar_download_placeholder" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                </LinearLayout>
+                <include android:id="@id/other_versions_top_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" layout="@layout/separator_horizontal" />
+                <include android:layout_gravity="center_horizontal" android:id="@id/versions_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" layout="@layout/appview_app_versions_layout" />
+                <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/appview_reward_app_versions_element" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" style="@style/Aptoide.TextView.Medium.XS.BlackAlpha" />
+                <com.mopub.mobileads.MoPubView android:id="@id/mopub_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/screenshots_list" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginTop="9.0dip" style="@style/AppViewWidget" />
+                <include android:id="@id/description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="10.0dip" layout="@layout/appview_app_description_layout" />
+                <include android:id="@id/donations_element" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="24.0dip" layout="@layout/fragment_appview_donations_list" />
+                <include android:id="@id/reviews_layout" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="5.0dip" layout="@layout/displayable_app_view_rate_and_comment" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/displayable_app_view_flag_this" />
+                <include android:id="@id/store_uploaded_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="10.0dip" layout="@layout/appview_uploaded_by_layout" />
+                <View android:id="@id/similar_bottom_placeholder" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/similar_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/catappult_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="7.0dip" layout="@layout/appview_catappult_card" />
+                <include android:id="@id/dev_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" layout="@layout/displayable_app_view_developer" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

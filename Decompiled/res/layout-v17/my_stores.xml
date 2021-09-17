@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/action_bar_stores" />
+    <cm.aptoide.aptoideviews.swipe.AptoideSwipeRefresh android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:progressBackgroundColor="?swipeBackgroundColor" app:progressPrimaryColor="?swipeProgressColor1" app:progressSecondaryColor="?swipeProgressColor2">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="@dimen/recycler_margin" android:paddingRight="@dimen/recycler_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/recycler_margin" android:paddingEnd="@dimen/recycler_margin" />
+    </cm.aptoide.aptoideviews.swipe.AptoideSwipeRefresh>
+    <cm.aptoide.aptoideviews.errors.ErrorView android:layout_gravity="center_horizontal" android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+    <include layout="@layout/partial_view_progress_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

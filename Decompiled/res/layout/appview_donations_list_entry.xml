@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/user_placement" android:background="@drawable/donation_list_place_border" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" style="@style/Aptoide.TextView.Medium.XS" />
+    <TextView android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/user_placement" android:layout_centerVertical="true" style="@style/Aptoide.TextView.Medium.XXS" />
+    <TextView android:textColor="@color/default_orange_gradient_end" android:id="@id/donated_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/Aptoide.TextView.Medium" />
+    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic_appcoins" android:layout_toLeftOf="@id/donated_value" android:layout_centerVertical="true" />
+</RelativeLayout>

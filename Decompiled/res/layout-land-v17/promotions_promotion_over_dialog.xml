@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="320.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="105.0dip" android:src="@drawable/ic_no_promotion_illustration" android:scaleType="centerCrop" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:text="@string/promotion_over_title" android:layout_marginStart="16.0dip" style="@style/Aptoide.TextView.Regular.L.BlackAlpha" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/promotion_over_message" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Aptoide.TextView.Regular.M.BlackAlpha" />
+        <android.widget.Button android:layout_gravity="end" android:id="@id/dismiss_button" android:layout_width="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:text="@string/all_button_got_it" android:layout_marginEnd="16.0dip" style="@style/Aptoide.Button.Flat.DefaultOrangeGradientEnd" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

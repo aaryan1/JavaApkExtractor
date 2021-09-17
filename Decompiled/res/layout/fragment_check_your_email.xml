@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/main_content" android:background="?checkYourEmailBackground" android:paddingBottom="@dimen/bottom_skip_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="100.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_aptoide_email" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/login_check_email_title" style="@style/Aptoide.TextView.Medium.XL.White" />
+            <TextView android:gravity="center" android:id="@id/check_your_email_body_text" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Aptoide.TextView.Medium.S.White" />
+            <android.widget.Button android:id="@id/open_email_app_button" android:layout_width="144.0dip" android:layout_height="40.0dip" android:layout_marginTop="32.0dip" android:text="@string/login_check_email_button" style="@style/Aptoide.Button.Solid" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

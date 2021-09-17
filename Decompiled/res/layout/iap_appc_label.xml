@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/iap_appc_label" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_appcoins_white_border" />
+    <TextView android:id="@id/appc_billing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/appc_message_appview_appcoins_iab" style="@style/Aptoide.TextView.Medium.XXS" />
+</LinearLayout>

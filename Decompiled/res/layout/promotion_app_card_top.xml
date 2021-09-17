@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/app_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/app_icon" android:layout_centerInParent="true">
+            <TextView android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Aptoide.TextView.Medium.M" />
+            <TextView android:id="@id/app_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Aptoide.TextView.Medium.S" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/app_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" style="@style/Aptoide.TextView.Regular.S.BlackAlpha" />
+</LinearLayout>

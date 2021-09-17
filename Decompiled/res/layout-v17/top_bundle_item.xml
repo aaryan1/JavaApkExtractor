@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="2.0dip" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="start|center" android:id="@id/bundle_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="8.0dip" style="@style/Aptoide.TextView.Regular.L.BlackAlpha" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/top_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.widget.Button android:textColor="?colorPrimaryDark" android:id="@id/bundle_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:text="@string/button_header_more" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:fontFamily="@style/Aptoide.TextView.Medium" style="?backgroundButton" />
+</LinearLayout>
