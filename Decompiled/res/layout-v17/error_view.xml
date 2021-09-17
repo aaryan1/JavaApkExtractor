@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_gravity="center_horizontal" android:id="@id/generic_error" android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageView android:layout_gravity="center_horizontal" android:id="@id/error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:src="@drawable/generic_error" />
-        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/error_text" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error503" style="@style/Aptoide.TextView.Regular.M.BlackAlpha" />
-        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/retry" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/retry_connection" android:paddingStart="25.0dip" android:paddingEnd="25.0dip" style="@style/Aptoide.Button.Ghost" />
-    </LinearLayout>
-</ScrollView>

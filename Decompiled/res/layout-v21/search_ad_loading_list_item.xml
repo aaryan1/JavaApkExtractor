@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:background="?appviewRatingCardBarckground" android:padding="@dimen/padding_very_small" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:primary="@color/transparent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:visibility="visible" layout="@layout/partial_view_progress_bar" />
-</FrameLayout>

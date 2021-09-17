@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/grey_fog_dark" android:id="@id/fragment_payment_login_aptoide_buttons_separator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_separator_text" android:layout_centerInParent="true" style="@style/Aptoide.TextView.Regular.XS" />
-    <View android:background="@color/grey_fog_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/fragment_payment_login_aptoide_buttons_separator_text" android:layout_centerVertical="true" />
-    <View android:background="@color/grey_fog_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/fragment_payment_login_aptoide_buttons_separator_text" android:layout_centerVertical="true" />
-</RelativeLayout>

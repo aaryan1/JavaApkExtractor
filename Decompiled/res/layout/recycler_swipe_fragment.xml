@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <cm.aptoide.aptoideviews.errors.ErrorView android:layout_gravity="center_horizontal" android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
-    <include layout="@layout/partial_view_progress_bar" />
-    <cm.aptoide.aptoideviews.swipe.AptoideSwipeRefresh android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:progressBackgroundColor="?swipeBackgroundColor" app:progressPrimaryColor="?swipeProgressColor1" app:progressSecondaryColor="?swipeProgressColor2">
-        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </cm.aptoide.aptoideviews.swipe.AptoideSwipeRefresh>
-</FrameLayout>

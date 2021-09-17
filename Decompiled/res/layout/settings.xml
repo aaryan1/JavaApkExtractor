@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:src="?icSettingsDrawable" />
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="17.0dip" android:layout_marginBottom="15.0dip" android:text="@string/newaccount_settings" style="@style/Aptoide.TextView.Regular.M.BlackAlpha" />
-</LinearLayout>
