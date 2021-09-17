@@ -208,6 +208,6 @@ public class Database {
     private void printException(Exception exception)
     {
         String str=exception.getMessage()+"   -->Localise<<--  "+exception.getLocalizedMessage();
-        System.out.println("Takendra -->>> "+exception.getMessage());
+        System.out.println("Exception -->>> "+exception.getMessage());
     }
 }

@@ -445,7 +445,6 @@ public long getAssetsSize()
         }
         certificateResult=result;
 
-
         String message = "";
         message += "MD5: " + result.MD5 + "\n";
         message += "SHA1: " + result.SHA1 + "\n";
@@ -460,8 +459,8 @@ public long getAssetsSize()
         message+="GetNotAfter: "+result.GetNotAfter+"\n";
         message+="GetNotBefore: "+result.GetNotBefore+"\n";
 
-        System.out.println("Takendra  "+message);
+        System.out.println("ApkSignInfo  "+message);
 
-        //textArea.setText(message);
+
     }
 }

@@ -23,7 +23,6 @@ public class ReadYml {
 				objectMapper.readValue(new File(location), Map.class);
 
 		for(Map.Entry<String, List<Object>> entry : user.entrySet()) {
-			System.out.println("Takendra-->>"+entry.getKey()+""+entry.getValue());
 			if(entry.getKey().equalsIgnoreCase("sdkInfo"))
 			{
 				ApkManifestData.setSdkInfo("sdkInfo "+entry.getValue());
