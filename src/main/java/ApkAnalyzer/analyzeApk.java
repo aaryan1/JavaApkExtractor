@@ -107,7 +107,7 @@ public class analyzeApk  implements Controller.Callback {
            ApkInfo oldApkInfo=db.getRecord(ApkManifestData.getPackageName());
              if(oldApkInfo!=null && oldApkInfo.getApkPackageName().equalsIgnoreCase(ApkManifestData.getPackageName()))
             {
-               System.out.println("Record of "+oldApkInfo.getApkPackageName()+" already exist \n Preparing comparison file ");
+               System.out.println("Record of "+oldApkInfo.getApkPackageName()+" already exist \n Generating comparison file ");
                prepareComparisonFile(oldApkInfo,info);
             }
             else {
@@ -358,6 +358,8 @@ public class analyzeApk  implements Controller.Callback {
 
 
                 output.close();
+
+                System.out.println("comparison file generated on path "+file.getAbsolutePath()+" successfully");
 
 
 
