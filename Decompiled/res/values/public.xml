@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="ya" id="0x7f020000" />
+    <public type="layout" name="basic_map" id="0x7f030000" />
+    <public type="anim" name="fadein" id="0x7f040000" />
+    <public type="anim" name="fadeout" id="0x7f040001" />
+    <public type="anim" name="hold" id="0x7f040002" />
+    <public type="anim" name="slide_enter" id="0x7f040003" />
+    <public type="anim" name="slide_enter_reverse" id="0x7f040004" />
+    <public type="anim" name="slide_exit" id="0x7f040005" />
+    <public type="anim" name="slide_exit_reverse" id="0x7f040006" />
+    <public type="anim" name="slide_v_enter" id="0x7f040007" />
+    <public type="anim" name="slide_v_enter_reverse" id="0x7f040008" />
+    <public type="anim" name="slide_v_exit" id="0x7f040009" />
+    <public type="anim" name="slide_v_exit_reverse" id="0x7f04000a" />
+    <public type="anim" name="zoom_enter" id="0x7f04000b" />
+    <public type="anim" name="zoom_enter_reverse" id="0x7f04000c" />
+    <public type="anim" name="zoom_exit" id="0x7f04000d" />
+    <public type="anim" name="zoom_exit_reverse" id="0x7f04000e" />
+    <public type="string" name="com.crashlytics.android.build_id" id="0x7f050000" />
+    <public type="id" name="map" id="0x7f060000" />
+    <public type="id" name="mapview" id="0x7f060001" />
+</resources>

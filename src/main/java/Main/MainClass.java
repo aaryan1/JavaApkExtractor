@@ -16,7 +16,7 @@ public class MainClass {
 		//apkPath=Paths.get(args[0]);
 		apkPath= Path.of(new File("C:\\apk\\aha.apk").getAbsolutePath());
 		//apkPath= Path.of(new File("C:\\apksigned\\aha.apk").getAbsolutePath());
-		apkPath= Path.of(new File("C:\\apk\\amazon-prime-video.apk").getAbsolutePath());
+		apkPath= Path.of(new File("C:\\apk\\Zee 5 Apk.apk").getAbsolutePath());
 		location.setApkPath(apkPath);
 		
 		new analyzeApk(apkPath);

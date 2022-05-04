@@ -1,0 +1,83 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: TloKdIqaBz5oXk66CjGgslOUnMI=
+SHA1-Digest-Manifest: cayDT5QNtPXwj45zretzzsJ6YLc=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA1-Digest: YQXZglw7yNv47Bos5zV/NBij+xU=
+
+Name: res/anim/fadein.xml
+SHA1-Digest: uMe6j1bg4YK5Z9vG6Es/habc8YY=
+
+Name: res/anim/slide_v_exit_reverse.xml
+SHA1-Digest: LK8nToECpN24UX1VnRnYx8S1mbs=
+
+Name: res/anim/slide_v_enter_reverse.xml
+SHA1-Digest: 9j0qoTwbQ/wYBAWpKHx2MiQuI3w=
+
+Name: res/layout/basic_map.xml
+SHA1-Digest: 8aN+XIRLUMjF2zCZ7amwHCKMD7s=
+
+Name: res/anim/slide_exit.xml
+SHA1-Digest: 7v5VWlm+zKI0JIumKr+0BikYn0M=
+
+Name: assets/MaterialIcons-Regular.ttf
+SHA1-Digest: mr4BqBknH2teU8asa0G6iK1gxC0=
+
+Name: res/anim/zoom_exit.xml
+SHA1-Digest: S8d8PwU7EgJwbI/vPICgDQ8Qj24=
+
+Name: assets/Thunkable-Roboto-Thin.ttf
+SHA1-Digest: VFhPy7VEH/b47QTaEjohwicPf/I=
+
+Name: assets/project-info.txt
+SHA1-Digest: JNja5zV0jwg/thQnnFpXcjm/RoY=
+
+Name: res/anim/zoom_exit_reverse.xml
+SHA1-Digest: NZ1Z09+4tSOCflHF8M0k1xoQhDw=
+
+Name: res/anim/zoom_enter_reverse.xml
+SHA1-Digest: MDR1g4BXOqBPsUVwdZV16GMLVXk=
+
+Name: classes2.dex
+SHA1-Digest: JXeE1iqPgUBqIQ7k8Mtghb8CdDo=
+
+Name: res/anim/slide_exit_reverse.xml
+SHA1-Digest: WCKbTlg3B/L4e5oypQmjnKUscxs=
+
+Name: res/anim/slide_enter.xml
+SHA1-Digest: ta7cuxRPQe+f2ylrtAJ/txj/Nr0=
+
+Name: res/anim/fadeout.xml
+SHA1-Digest: GlQssZxfKcDnxqWyCGco5l8uYBo=
+
+Name: res/anim/zoom_enter.xml
+SHA1-Digest: 56Ts+OXIkG/Xl26FId4MhAW3UlY=
+
+Name: assets/Webp.net-resizeimage(1).jpg
+SHA1-Digest: DEdI0YmZ4gXFCXKH0FF5GnEBeIw=
+
+Name: res/anim/slide_v_enter.xml
+SHA1-Digest: cBg/86/qJ87VsihqgI50FL39nSk=
+
+Name: res/anim/slide_v_exit.xml
+SHA1-Digest: ITyKCN0NXHxBMT1mKT+PT6RM4+I=
+
+Name: resources.arsc
+SHA1-Digest: 6ReHBZ1t/erTjrBMIbVxDCwOSnc=
+
+Name: assets/Thunkable-Roboto-Regular.ttf
+SHA1-Digest: iV/Eh2kV1DhIma8u9qYizToFnnA=
+
+Name: res/drawable/ya.png
+SHA1-Digest: PbqGRgvdzTNXsbovFGL7ROyo7RQ=
+
+Name: classes.dex
+SHA1-Digest: vXPgGDPOE3gFG/hD87uXYgn946o=
+
+Name: res/anim/hold.xml
+SHA1-Digest: G0kbhOrlO4ARQW6bk9Mu84FgRKI=
+
+Name: res/anim/slide_enter_reverse.xml
+SHA1-Digest: wXbwI6pbzyGIfpYxPm35PXfXF5Q=
+

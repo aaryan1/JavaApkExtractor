@@ -89,6 +89,15 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="Gradle: mysql-connector-java-8.0.16">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../libs/mysql-connector-java-8.0.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="Gradle: sdk-common-26.0.0-dev">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../libs/sdk-common-26.0.0-dev.jar!/" />
