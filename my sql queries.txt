@@ -1,0 +1,9 @@
+create database apkDb;
+use apkdb;
+
+create table apkDetails(packageName varchar(200) primary key,apkName varchar(200),apkSize varchar(100),apkDexSize varchar(100),apkResourcesSize varchar(100),apkAssetsSize varchar(100),apkIsDebuggable varchar(10),apkVersionInfo varchar(2000),apkSdkInfo varchar(2000),apkCompiledSdkVersion varchar(100),apkCompileSdkVersionName varchar(100),apkSupportedScreenSize varchar(5000),akpActivityCount varchar(100),apkActivitiesName longtext,apkPermissionsCount varchar(100),apkPermissionNames longtext,apkServiceCount varchar(100),apkServiceNames longtext,apkFeatureCount varchar(100),apkFeatureNames longtext,apkBroadCastCount varchar(100),apkBroadCastNames longtext,apkContentProviderCount varchar(100),apkContentProvideNames longtext,apkSignInfoMD5  longtext,apkSignInfoSHA1 longtext,apkSignInfoSHA256 longtext,apkSignInfoFacebookHash longtext,apkSignInfoPublicKey longtext,apkSignInfoVersion text,apkSignInfoSignature longtext,apkSignInfoSignAlgName longtext,apkSignInfoSerialNumber text,apkSignInfoIssuerNameDn longtext,apkSignInfoSubjectNameDn longtext,apkSignInfoGetNotAfter text,apkSignInfoGetNotBefore text);
+
+insert into apkDetails values("com.db.db2")
+
+select * from apkDetails
+truncate apkDetails
